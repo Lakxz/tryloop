@@ -1,0 +1,28 @@
+body {
+    background: #ffffff;
+    font-family: "Times New Roman", serif;
+}
+
+.jojo {
+    width: fit-content;
+    margin: 40px auto;
+    padding: 20px;
+    background: #9ed6ea;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+h1 {
+    color: #2b6f78;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+table {
+    background: #8fcde4;
+    
+
+}
+
+
+
+
