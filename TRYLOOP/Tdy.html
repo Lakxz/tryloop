@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rank Report</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(104, 148, 242);
+}
+section
+{
+   background-color: rgb(255, 255, 255);
+   padding-bottom: 30px;
+   margin-left: 500px;
+   margin-right: 500px;
+   margin-top: 150px;
+   border-style: solid;
+   border-color: rgb(255, 255, 255);
+   border-radius: 10px;
+}
+.gradient-text {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+}
+
+input {
+    width: 180px;
+    padding: 5px;
+}
+
+input[type="button"] {
+    width: 150px;
+    margin-left: 230px;
+    padding: 6px;
+    
+}
+
+#Result, #Total {
+    text-align: center;
+    margin-top: 15px;
+}
+</style>
+
+</head>
+<body>
+    <section>
+    <h1 class="gradient-text">STUDENT REPORT</h1>
+    <h2 id="Total"></h2>
+    <h3 id="Result"></h3>
+    
+    <form>
+        <label>Enter a Student Name :</label>
+        <input type="text" placeholder="student name">
+        <br>
+        <br>
+        <label>Enter a Roll Number :</label>
+        <input type="number" placeholder="roll number">
+        <br>
+        <br>
+        <label>Enter a Mark of Subject1 :</label>
+        <input type="number" placeholder="Tamil mark" id="m1">
+        <br>
+        <br>
+        <label>Enter a Mark of Subject2 :</label>
+        <input type="number" placeholder="English mark" id="m2">
+        <br>
+        <br>
+        <label>Enter a Mark of Subject3 :</label>
+        <input type="number" placeholder="Maths mark" id="m3">
+        <br>
+        <br>
+        <br>
+        <input type="button" value="Check Result" onclick="result()">
+        <script>
+            function result()
+            {
+            let m1=Number(document.getElementById("m1").value)
+            let m2=Number(document.getElementById("m2").value)
+            let m3=Number(document.getElementById("m3").value)
+            let tot=m1+m2+m3
+            if(m1<35||m2<35||m3<35)
+        {
+            document.getElementById("Result").innerText="Sorry, You Failed in Exam!"
+        }
+        else
+        {
+            document.getElementById("Result").innerText="Hurray! You Passed in Exam"
+        }
+        document.getElementById("Total").innerText = "Total Marks : " + tot+"/300"
+
+
+    }
+        </script>
+    </form>
+    </section>
+</body>
+</html>
