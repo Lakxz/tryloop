@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshya GT | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="protfolio.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in">LAKSHYA<span> G T</span></div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        <a href="#home" onclick="cancel()">Home</a>
+        <a href="#about" onclick="cancel()">About</a>
+        <a href="#skills" onclick="cancel()">Skills</a>
+        <a href="#projects" onclick="cancel()">Projects</a>
+        <a href="#achievements" onclick="cancel()">Achievements</a>
+        <a href="#contact" onclick="cancel()">Contact</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-container">
+        <div class="hero-content" data-aos="fade-right">
+            <h3>Welcome to my Portfolio</h3>
+            <h1>Hey, I'm <span>Lakshya GT</span></h1>
+            <div class="typewriter-container">
+                <span class="typewriter"></span><span class="cursor">|</span>
+            </div>
+            <p>
+                A passionate Computer Science student specializing in <b>Data Analytics</b> and <b>Full-Stack Development</b>. I bridge the gap between complex data insights and interactive user experiences.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/Lakxz"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lakshya10"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-secondary-link"><button class="btn-secondary">Contact Me</button></a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="zoom-in">
+            <div class="img-box">
+                <img src="lakslala.jpeg" alt="Lakshya Photo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+    <div class="about-container" data-aos="fade-up">
+        <div class="about-card">
+            <p>I am an aspiring Data Analyst proficient in <b>Excel, Power BI, SQL, and Python</b>.Currently pursuing a B.E. in CSE with a <b>CGPA of 9.8</b>, I specialize in developing interactive dashboards and identifying business trends through data cleaning and visualization.</p>
+        </div>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <h2 class="section-title" data-aos="fade-up">Technical Proficiency</h2>
+    <div class="skill-grid">
+        <div class="skill-card" data-aos="flip-left">
+            <i class="fa-brands fa-python"></i>
+            <h3>Python & Java</h3>
+            <div class="progress-bar"><div class="fill" style="width: 85%"></div></div>
+        </div>
+        <div class="skill-card" data-aos="flip-left" data-aos-delay="100">
+            <i class="fa-solid fa-chart-simple"></i>
+            <h3>Data Analysis</h3>
+            <div class="progress-bar"><div class="fill" style="width: 80%"></div></div>
+        </div>
+        <div class="skill-card" data-aos="flip-left" data-aos-delay="200">
+            <i class="fa-solid fa-database"></i>
+            <h3>Power BI & SQL</h3>
+            <div class="progress-bar"><div class="fill" style="width: 75%"></div></div>
+        </div>
+        <div class="skill-card" data-aos="flip-left" data-aos-delay="300">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Dev</h3>
+            <div class="progress-bar"><div class="fill" style="width: 70%"></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+    <div class="project-grid">
+        <div class="project-card" data-aos="zoom-in">
+            <div class="project-info">
+                <span>Data Science</span>
+                <h3>Customer Behavioural Analysis</h3>
+                <p>Analyzed 1000+ records to segment customers, improving marketing strategies by 16%.</p>
+                <a href="https://github.com/Lakxz/PRODIGY_DS_01" class="project-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="project-info">
+                <span>Web Dev</span>
+                <h3>Smart Weather Prediction-NASA</h3>
+                <p>Real-time weather forecasting and atmospheric visualization using NASA's Open Source satellite data APIs.</p>
+                <a href="https://kevinsamson6262-hub.github.io/weather-app/" class="project-link">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="achievements" id="achievements">
+    <h2 class="section-title" data-aos="fade-up">Achievements & Awards</h2>
+    <div class="achievement-grid">
+        <div class="achievement-card" data-aos="fade-up">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Academic Excellence</h3>
+            <p>Secured Rank 1 in Academics  with a current CGPA of 9.79.</p>
+        </div>
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-solid fa-trophy"></i>
+            <h3>TechSpark '25 Winner</h3>
+            <p>Won 1st prize in Paper Presentation at TechSpark 25 and 2nd prize at PSN College.</p>
+        </div>
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Quiz Master</h3>
+            <p>Won 1st prize in technical quizzes at NEC, PSN, and Infant Jesus Colleges.</p>
+        </div>
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fa-solid fa-medal"></i>
+            <h3>National Athlete</h3>
+            <p>Secured 3rd place in Khelo India National Games for Taekwondo.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact-card" data-aos="zoom-out">
+        <h2>Let's Work Together</h2>
+        <p>Currently looking for internship opportunities and freelance projects!</p>
+        <div class="contact-details">
+            <div class="detail-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>lakshyathanam@gmail.com</span>
+            </div>
+            <div class="detail-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 6369606096</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000, once: true, offset: 100 });
+
+    function hamburg() {
+        document.querySelector(".dropdown").style.transform = "translateX(0)";
+    }
+    function cancel() {
+        document.querySelector(".dropdown").style.transform = "translateX(100%)";
+    }
+
+    const typewriterElement = document.querySelector(".typewriter");
+    const words = ["Data Analyst", "Web Developer", "Data Scientist"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentWord = words[wordIndex];
+        if (isDeleting) { charIndex--; } else { charIndex++; }
+        typewriterElement.textContent = currentWord.substring(0, charIndex);
+        let typeSpeed = isDeleting ? 50 : 150;
+        if (!isDeleting && charIndex === currentWord.length) {
+            typeSpeed = 2000; 
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typeSpeed = 500;
+        }
+        setTimeout(type, typeSpeed);
+    }
+    document.addEventListener("DOMContentLoaded", type);
+</script>
+</body>
+</html>
